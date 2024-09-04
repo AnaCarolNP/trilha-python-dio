@@ -1,11 +1,12 @@
 menu = """
+Seja bem vindo(a) ao Banco DIO!
 
 [d] Depositar
 [s] Sacar
 [e] Extrato
 [q] Sair
 
-=> """
+=>  """
 
 saldo = 0
 limite = 500
@@ -15,8 +16,8 @@ LIMITE_SAQUES = 3
 
 while True:
 
-    opcao = input(menu)
-
+    opcao = input(menu).strip().lower()
+    
     if opcao == "d":
         valor = float(input("Informe o valor do depósito: "))
 
